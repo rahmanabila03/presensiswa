@@ -17,14 +17,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.474"
-        app:srcCompat="@drawable/logo_absen" />
+        app:srcCompat="@drawable/logo_absen"
+        android:contentDescription="@string/logo5" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="312dp"
-        android:text="presen"
+        android:text="@string/presen2"
         android:textColor="#000000"
         android:textSize="45sp"
         android:textStyle="normal"
@@ -36,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="312dp"
-        android:text="siswa"
+        android:text="@string/siswa2"
         android:textColor="#C12E00"
         android:textSize="45sp"
         android:textStyle="normal"
