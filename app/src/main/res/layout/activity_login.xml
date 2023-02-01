@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/logo_absen"
-        android:contentDescription="@string/logo" />
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView3"
@@ -65,11 +65,11 @@
             android:layout_marginStart="141dp"
             android:layout_marginTop="68dp"
             android:layout_marginEnd="141dp"
-            android:backgroundTint="#FFFFFF"
             android:onClick="login"
             android:text="@string/login"
             android:textColor="#000000"
             android:textSize="16sp"
+            app:backgroundTint="#FDFDFD"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
@@ -83,14 +83,12 @@
             android:layout_marginTop="106dp"
             android:layout_marginEnd="61dp"
             android:background="#FFFFFF"
-            android:backgroundTint="#FFFFFF"
-            android:ems="10"
             android:hint="@string/nama"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:autofillHints="" />
+            tools:ignore="Autofill" />
 
         <EditText
             android:id="@+id/editTextTextPersonName3"
@@ -100,14 +98,12 @@
             android:layout_marginTop="23dp"
             android:layout_marginEnd="61dp"
             android:background="#FFFFFF"
-            android:backgroundTint="#FFFFFF"
-            android:ems="10"
             android:hint="@string/nisn"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-            android:autofillHints="" />
+            tools:ignore="Autofill" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

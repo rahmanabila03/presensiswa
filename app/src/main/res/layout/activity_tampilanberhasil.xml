@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_absen1"
-        android:contentDescription="@string/logo3" />
+        tools:ignore="ContentDescription" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="274dp"
@@ -62,7 +62,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView11"
             app:srcCompat="@drawable/cheklist_biru"
-            android:contentDescription="@string/logo4" />
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textView12"

@@ -27,4 +27,7 @@
     <string name="ijin">Ijin</string>
     <string name="todo">TODO</string>
     <string name="back">TODO</string>
+    <string name="img_back">img_back</string>
+    <string name="img_logo" />
+    <string name="presensiswa">presensiswa</string>
 </resources>

@@ -26,7 +26,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo_absen1"
-            android:contentDescription="@string/logo2" />
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textView5"

@@ -15,4 +15,5 @@ class login : AppCompatActivity() {
         val ini = Intent (this, Beranda :: class.java)
         startActivity(ini)
     }
+
 }

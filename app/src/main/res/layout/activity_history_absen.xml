@@ -6,4 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".HistoryAbsen">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_note"
+        android:layout_width="415dp"
+        android:layout_height="640dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingClass,UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/imgback"
+        android:layout_width="53dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="56dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_absen1"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txt.presensiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/presensiswa"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/imglogo"
+        app:layout_constraintStart_toEndOf="@+id/imgback"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

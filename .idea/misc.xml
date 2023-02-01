@@ -8,17 +8,19 @@
         <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/drawable/button.xml" value="0.195" />
         <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/drawable/login.xml" value="0.134" />
         <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/drawable/terimakasih.xml" value="0.2105" />
-        <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/layout/activity_absen.xml" value="0.25" />
+        <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/layout/activity_absen.xml" value="0.22" />
         <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/layout/activity_beranda.xml" value="0.20416666666666666" />
-        <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/layout/activity_history_absen.xml" value="0.19010416666666666" />
+        <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/layout/activity_history_absen.xml" value="0.175" />
         <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/layout/activity_history_absen2.xml" value="0.20416666666666666" />
+        <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/layout/activity_home.xml" value="0.20416666666666666" />
         <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/layout/activity_tampilanberhasil.xml" value="0.25" />
+        <entry key="..\:/rahmanabila/presensiswa/app/src/main/res/layout/adapter_presensiswa.xml" value="0.19010416666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
