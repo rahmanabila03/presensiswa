@@ -19,7 +19,7 @@ class presensiswaAdapter (private val notes: ArrayList<Note>) : RecyclerView.Ada
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         val note = notes[position]
-        holder.view.txt_presensiswa.text =  note.title
+        holder.view.txt_presensiswa.text =  note.nama
     }
 
     override fun getItemCount() = notes.size
