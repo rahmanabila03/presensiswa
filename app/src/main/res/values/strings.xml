@@ -5,19 +5,14 @@
     <string name="login">login</string>
     <string name="siswa">siswa</string>
     <string name="presen">presen</string>
-    <string name="logo">TODO</string>
-    <string name="logo2">TODO</string>
     <string name="presen1">presen</string>
     <string name="siswa1">siswa</string>
     <string name="absensi">Absensi</string>
     <string name="history_absen">History Absen</string>
-    <string name="logo3">TODO</string>
     <string name="terima_kasih">Terima Kasih!</string>
-    <string name="logo4">TODO</string>
     <string name="anda_berhasil_absen">Anda Berhasil Absen</string>
     <string name="siswa2">siswa</string>
     <string name="presen2">presen</string>
-    <string name="logo5">TODO</string>
     <string name="nama1">nama :</string>
     <string name="kelas">kelas :</string>
     <string name="nisn1">nisn :</string>
@@ -25,9 +20,5 @@
     <string name="hadir">Hadir</string>
     <string name="sakit">Sakit</string>
     <string name="ijin">Ijin</string>
-    <string name="todo">TODO</string>
-    <string name="back">TODO</string>
-    <string name="img_back">img_back</string>
-    <string name="img_logo" />
     <string name="presensiswa">presensiswa</string>
 </resources>

@@ -15,4 +15,8 @@ class Beranda : AppCompatActivity() {
         val itu = Intent (this,absen ::class.java)
         startActivity(itu)
     }
+
+    fun historyAbsen(view: View) {
+        startActivity(Intent(this, HistoryAbsen::class.java))
+    }
 }

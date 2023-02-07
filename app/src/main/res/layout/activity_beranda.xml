@@ -73,6 +73,7 @@
             android:background="@drawable/button"
             android:text="@string/history_absen"
             android:textColor="@color/white"
+            android:onClick="historyAbsen"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
