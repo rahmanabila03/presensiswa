@@ -18,12 +18,11 @@ import kotlinx.coroutines.withContext
 class HistoryAbsen : AppCompatActivity() {
 
     val db by lazy { NoteDB(this) }
-    lateinit var presensiswaAdapter: presensiswaAdapter
+    lateinit var adapter: adapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history_absen)
-        setuplistener()
         setupRecycleView()
     }
 
@@ -33,21 +32,16 @@ class HistoryAbsen : AppCompatActivity() {
             val notes = db.noteDao().getNotes()
             Log.d("HisoryAbsen", "dbResponse:$notes")
             withContext(Dispatchers.Main) {
-                presensiswaAdapter.setData( notes )
+                adapter.setData( notes )
             }
-        }
-    }
-    fun setuplistener() {
-        img_create.setOnClickListener {
-            startActivity(Intent(this, HistoryAbsen::class.java))
         }
     }
 
     private fun setupRecycleView(){
-        presensiswaAdapter = presensiswaAdapter(arrayListOf())
+        adapter = adapter (arrayListOf())
         list_note.apply {
             layoutManager = LinearLayoutManager(applicationContext)
-            adapter = presensiswaAdapter
+            adapter = adapter
         }
     }
 }

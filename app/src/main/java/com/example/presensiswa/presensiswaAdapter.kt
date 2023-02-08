@@ -8,29 +8,3 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.presensiswa.room.Note
 import kotlinx.android.synthetic.main.adapter_presensiswa.view.*
 
-class presensiswaAdapter (private val notes: ArrayList<Note>) : RecyclerView.Adapter<presensiswaAdapter.NoteViewHolder>()  {
-
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
-        return NoteViewHolder(
-            LayoutInflater.from(parent.context).inflate( R.layout.adapter_presensiswa, parent, false)
-        )
-    }
-
-    override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
-        val note = notes[position]
-        holder.view.txt_presensiswa.text =  note.nama
-    }
-
-    override fun getItemCount() = notes.size
-
-    class NoteViewHolder( val view: View) : RecyclerView.ViewHolder(view)
-
-    @SuppressLint("NotifyDataSetChanged")
-    fun  setData(list: List<Note>) {
-        notes.clear()
-        notes.addAll(list)
-        notifyDataSetChanged()
-    }
-
-}
