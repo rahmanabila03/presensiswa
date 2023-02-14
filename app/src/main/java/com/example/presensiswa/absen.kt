@@ -54,32 +54,6 @@ class absen : AppCompatActivity(){
             }
         }
     }
-    }
-
-    class adapter (private val notes: ArrayList<Note>) : RecyclerView.Adapter<adapter.NoteViewHolder>()  {
-
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
-        return NoteViewHolder(
-            LayoutInflater.from(parent.context).inflate( R.layout.activity_history_absen, parent, false)
-        )
-    }
-
-    override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
-        val note = notes[position]
-        holder.view.txt_presensiswa.text =  note.nama
-    }
-
-    override fun getItemCount() = notes.size
-
-    class NoteViewHolder( val view: View) : RecyclerView.ViewHolder(view)
-
-    @SuppressLint("NotifyDataSetChanged")
-    fun  setData(list: List<Note>) {
-        notes.clear()
-        notes.addAll(list)
-        notifyDataSetChanged()
-    }
 
 
 

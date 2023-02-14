@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.presensiswa.room.Note
 import com.example.presensiswa.room.NoteDB
@@ -18,12 +19,17 @@ import kotlinx.coroutines.withContext
 class HistoryAbsen : AppCompatActivity() {
 
     val db by lazy { NoteDB(this) }
-    lateinit var adapter: adapter
+    lateinit var adapter: presensiswaAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history_absen)
         setupRecycleView()
+    }
+
+    fun kembali (view: View){
+        val nara = Intent (this,Beranda::class.java)
+        startActivity(nara)
     }
 
     override fun onStart() {
@@ -38,7 +44,7 @@ class HistoryAbsen : AppCompatActivity() {
     }
 
     private fun setupRecycleView(){
-        adapter = adapter (arrayListOf())
+        adapter = presensiswaAdapter (arrayListOf())
         list_note.apply {
             layoutManager = LinearLayoutManager(applicationContext)
             adapter = adapter
