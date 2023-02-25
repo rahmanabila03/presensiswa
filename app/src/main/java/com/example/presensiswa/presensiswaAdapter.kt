@@ -4,8 +4,10 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.presensiswa.room.Note
+import kotlinx.android.synthetic.main.activity_absen.view.*
 import kotlinx.android.synthetic.main.activity_history_absen.view.*
 import kotlinx.android.synthetic.main.adapter_presensiswa.view.*
 
@@ -21,7 +23,7 @@ class presensiswaAdapter (private val notes: ArrayList<Note>) : RecyclerView.Ada
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         val note = notes[position]
-        holder.view.txt_presensiswa.text = note.nama
+        holder.view.txt_namasiswaadapter.text = note.nama
     }
 
     override fun getItemCount() = notes.size
