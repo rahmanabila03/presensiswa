@@ -32,6 +32,11 @@ class absen : AppCompatActivity(){
         startActivity(nana)
     }
     fun centang (view: View){
+        CoroutineScope(Dispatchers.IO).launch {
+            db.noteDao().addNote(
+                Note(1, "A", "B", 1)
+            )
+        }
         val ceklis = Intent (this,tampilanberhasil::class.java)
         startActivity(ceklis)
     }
