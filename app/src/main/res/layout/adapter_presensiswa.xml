@@ -37,12 +37,12 @@
         <TextView
             android:id="@+id/txt.jam"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/jam"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="220dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="200dp"
             android:layout_marginTop="28dp"
-            android:textColor="@color/white"/>
+            android:layout_marginEnd="10dp"
+            android:text="@string/jam"
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/txt.keteranganadapter"

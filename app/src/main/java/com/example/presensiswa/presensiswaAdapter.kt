@@ -16,8 +16,7 @@ class presensiswaAdapter (private val notes: ArrayList<Note>) : RecyclerView.Ada
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         return NoteViewHolder(
-            LayoutInflater.from(parent.context)
-                .inflate(R.layout.activity_history_absen, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.adapter_presensiswa, parent, false)
         )
     }
 

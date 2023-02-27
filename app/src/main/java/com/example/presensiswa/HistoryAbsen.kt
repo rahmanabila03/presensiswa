@@ -19,8 +19,7 @@ import kotlinx.coroutines.withContext
 class HistoryAbsen : AppCompatActivity() {
 
     val db by lazy { NoteDB(this) }
-    lateinit var adapter: presensiswaAdapter
-
+    lateinit var presensiswaAdapter: presensiswaAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history_absen)
@@ -38,16 +37,16 @@ class HistoryAbsen : AppCompatActivity() {
             val notes = db.noteDao().getNotes()
             Log.d("HisoryAbsen", "dbResponse:$notes")
             withContext(Dispatchers.Main) {
-                adapter.setData( notes )
+                presensiswaAdapter.setData( notes )
             }
         }
     }
 
     private fun setupRecycleView(){
-        adapter = presensiswaAdapter (arrayListOf())
+        presensiswaAdapter = presensiswaAdapter (arrayListOf())
         list_note.apply {
             layoutManager = LinearLayoutManager(applicationContext)
-            adapter = adapter
+            adapter = presensiswaAdapter
         }
     }
 }
